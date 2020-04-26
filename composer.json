@@ -10,7 +10,13 @@
             "email": "roman@bx24-store.ru"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "dev-master",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/stayfuneral/httprequest.git"
+        }
+    ],
     "require": {
         "php": ">=7.0.0"
     },
