@@ -16,6 +16,21 @@ All methods are static, don't need create new class object
 
 ### Methods
 
+*`GetRequestMethod()`* get request method:
+
+```php
+$method = Request::GetRequestMethod();
+
+switch($method) {
+    case 'GET':
+        // your code
+        break;
+    case 'POST':
+        // your code
+        break;
+}
+```
+
 #### GET
 
 *`isGet()`* check GET
