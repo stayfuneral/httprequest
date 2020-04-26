@@ -64,11 +64,22 @@ class Request {
      * @return object
      */
     
-    public static function GetRawRequest() : object {
+    public static function GetRawRequest($param = null) : object {
+        $rawData = null;
         $phpInput = file_get_contents('php://input');
+        
         if(!empty($phpInput)) {
-            return json_decode($phpInput);
+            $rawData = json_decode($phpInput);
         }
+        
+        if($param !== null) {
+            $result = $rawData->$param;
+        } else {
+            $result = $rawData;
+        }
+        
+        return $result;
+        
     }
 
 
