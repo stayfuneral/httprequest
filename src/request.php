@@ -3,7 +3,7 @@
 namespace Ramapriya\Request;
 
 /**
- * Ребольшая библиотека для работы с HTTP-запросами
+ * Небольшая библиотека для работы с HTTP-запросами
  *
  * @author Roman Gonyukov
  */
@@ -171,6 +171,27 @@ class Request {
         return $result;
     }
     
+    /**
+     * Получает список параметров php://input
+     * 
+     * @uses Request::isRaw(), Request::getRawRequest()
+     * 
+     * @return array
+     */
+    
+    public static function RawParams() : array {
+        
+        $result = [];
+        
+        if(self::isRaw() === true) {
+            foreach (self::GetRawRequest() as $key => $value) {
+                $result[] = $key;
+            }            
+        }
+        
+        return $result;
+    }
+
     /**
      * Получает тип запроса
      * 
