@@ -1,6 +1,7 @@
 {
     "name": "ramapriya/http-request",
     "description": "small library for work with http requests",
+    "version": "1.0.0",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -9,7 +10,7 @@
             "email": "roman@bx24-store.ru"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=7.0.0"
     },
