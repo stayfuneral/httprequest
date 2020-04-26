@@ -52,6 +52,21 @@ if(!in_array('user_id', Request::GetParams)) {
 
 #### Raw requests (php://input)
 
+Before:
+
+```php
+$json = file_get_contents("php://input");
+$request = json_decode($json);
+```
+
+Now:
+
+```php
+if(Request::isRaw()) {
+    $request = Request::GetRawRequest();
+}
+```
+
 *`isRaw()`* check raw request
 
 *`GetRawRequest($param = null)`* get decoded raw request. If `$param` isn't null, methods returns value of param, else - decoded json
