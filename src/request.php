@@ -128,6 +128,23 @@ class Request {
     }
     
     /**
+     * Получает тип запроса
+     * 
+     * @return string
+     */
+    
+    public static function GetRequestMethod() : string {
+        
+        if(self::isGet() === true) {
+            $result = 'GET';
+        } else if(self::isPost() === true) {
+            $result = 'POST';
+        }
+        
+        return $result;
+    }
+
+    /**
      * Получает заголовки запроса
      * 
      * @return array
