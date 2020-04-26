@@ -40,6 +40,39 @@ class Request {
     }
     
     /**
+     * Проверяет наличие php://input
+     * 
+     * @return bool
+     */
+    
+    public static function isRaw() : bool {
+        
+        $result = false;
+        $raw = self::GetRawRequest();
+        
+        if(!empty($raw)) {
+            $result = true;
+        }
+        
+        return $result;
+        
+    }
+
+    /**
+     * Получает сырой json из php://input
+     * 
+     * @return object
+     */
+    
+    public static function GetRawRequest() : object {
+        $phpInput = file_get_contents('php://input');
+        if(!empty($phpInput)) {
+            return json_decode($phpInput);
+        }
+    }
+
+
+    /**
      * Получает содержимое глобальной переменной $_GET
      * 
      * @param $param string or null
