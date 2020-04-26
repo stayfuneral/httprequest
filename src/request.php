@@ -64,7 +64,7 @@ class Request {
      * @return object
      */
     
-    public static function Raw($param = null) : object {
+    public static function Raw($param = null) {
         $rawData = null;
         $phpInput = file_get_contents('php://input');
         
