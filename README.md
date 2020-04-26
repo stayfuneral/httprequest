@@ -57,6 +57,10 @@ Before:
 ```php
 $json = file_get_contents("php://input");
 $request = json_decode($json);
+
+if(!empty($request)) {
+    // your code
+}
 ```
 
 Now:
