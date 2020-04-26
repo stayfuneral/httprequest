@@ -26,7 +26,7 @@ if(Request::isGet()!== false) {
 }
 ```
 
-*`Get($param = null)`* get global `$_GET`. If `$param` is'n null, methods returns value of param - `$_GET["param"]`, else - object `$_GET`
+*`Get($param = null)`* get global `$_GET`. If `$param` isn't null, methods returns value of param - `$_GET["param"]`, else - object `$_GET`
 
 ```php
 if(!empty(Request::Get('email'))) {
@@ -46,7 +46,7 @@ if(!in_array('user_id', Request::GetParams)) {
 
 *`isPost()`* check POST
 
-*`Post($param = null)`* get global `$_POST`. If `$param` is'n null, methods returns value of param - `$_POST["param"]`, else - object `$_POST`
+*`Post($param = null)`* get global `$_POST`. If `$param` isn't null, methods returns value of param - `$_POST["param"]`, else - object `$_POST`
 
 *`PostParams`* get all keys of `$_POST`, method returns array of keys
 
@@ -54,7 +54,7 @@ if(!in_array('user_id', Request::GetParams)) {
 
 *`isRaw()`* check raw request
 
-*`GetRawRequest($param = null)`* get decoded raw request. If `$param` is'n null, methods returns value of param, else - decoded json
+*`GetRawRequest($param = null)`* get decoded raw request. If `$param` isn't null, methods returns value of param, else - decoded json
 
 *`RawParams`* get all keys of `GetRawParams()`, method returns array of keys
 
