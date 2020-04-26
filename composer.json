@@ -2,12 +2,17 @@
     "name": "ramapriya/http-request",
     "description": "small library for work with http requests",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "Roman Gonyukov",
             "email": "roman@bx24-store.ru"
         }
     ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0"
+    },
     "autoload": {
         "classmap": ["src/"]
     }
