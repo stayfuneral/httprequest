@@ -67,13 +67,13 @@ Now:
 
 ```php
 if(Request::isRaw()) {
-    $request = Request::GetRawRequest();
+    $request = Request::Raw();
 }
 ```
 
 *`isRaw()`* check raw request
 
-*`GetRawRequest($param = null)`* get decoded raw request. If `$param` isn't null, methods returns value of param, else - decoded json
+*`Raw($param = null)`* get decoded raw request. If `$param` isn't null, methods returns value of param, else - decoded json
 
 *`RawParams`* get all keys of `GetRawParams()`, method returns array of keys
 

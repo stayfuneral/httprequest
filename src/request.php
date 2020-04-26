@@ -48,7 +48,7 @@ class Request {
     public static function isRaw() : bool {
         
         $result = false;
-        $raw = self::GetRawRequest();
+        $raw = self::Raw();
         
         if(!empty($raw)) {
             $result = true;
@@ -64,7 +64,7 @@ class Request {
      * @return object
      */
     
-    public static function GetRawRequest($param = null) : object {
+    public static function Raw($param = null) : object {
         $rawData = null;
         $phpInput = file_get_contents('php://input');
         
@@ -174,7 +174,7 @@ class Request {
     /**
      * Получает список параметров php://input
      * 
-     * @uses Request::isRaw(), Request::getRawRequest()
+     * @uses Request::isRaw(), Request::Raw()
      * 
      * @return array
      */
@@ -184,7 +184,7 @@ class Request {
         $result = [];
         
         if(self::isRaw() === true) {
-            foreach (self::GetRawRequest() as $key => $value) {
+            foreach (self::Raw() as $key => $value) {
                 $result[] = $key;
             }            
         }
