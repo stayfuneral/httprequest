@@ -34,7 +34,7 @@ if(!empty(Request::Get('email'))) {
 }
 ```
 
-*`GetParams`* get all keys of `$_GET`, method returns array of keys
+*`GetParams()`* get all keys of `$_GET`, method returns array of keys
 
 ```php
 if(!in_array('user_id', Request::GetParams)) {
@@ -45,13 +45,17 @@ if(!in_array('user_id', Request::GetParams)) {
 #### POST
 
 *`isPost()`* check POST
+
 *`Post($param = null)`* get global `$_POST`. If `$param` is'n null, methods returns value of param - `$_POST["param"]`, else - object `$_POST`
+
 *`PostParams`* get all keys of `$_POST`, method returns array of keys
 
 #### Raw requests (php://input)
 
 *`isRaw()`* check raw request
+
 *`GetRawRequest($param = null)`* get decoded raw request. If `$param` is'n null, methods returns value of param, else - decoded json
+
 *`RawParams`* get all keys of `GetRawParams()`, method returns array of keys
 
 #### Headers
