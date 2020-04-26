@@ -9,7 +9,7 @@
             "email": "roman@bx24-store.ru"
         }
     ],
-    "minimum-stability": "stabile",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=7.0.0"
     },
