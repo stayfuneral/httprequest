@@ -1,0 +1,13 @@
+{
+    "name": "ramapriya/httprequest",
+    "description": "small library for work with http requests",
+    "authors": [
+        {
+            "name": "Roman Gonyukov",
+            "email": "roman@bx24-store.ru"
+        }
+    ],
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
