@@ -1,6 +1,7 @@
 {
     "name": "ramapriya/http-request",
     "description": "small library for work with http requests",
+    "license": "MIT",
     "authors": [
         {
             "name": "Roman Gonyukov",
