@@ -15,9 +15,7 @@ Add dependency in composer.json
 Evoke autoload file after installation or updating composer
 
 ```php
-
 require __DIR__ . "/vendor/autoload.php";
-
 ```
 
 All methods are static, don't need create new class object
