@@ -10,7 +10,7 @@
             "email": "roman@bx24-store.ru"
         }
     ],
-    "minimum-stability": "dev-master",
+    "minimum-stability": "dev",
     "repositories": [
         {
             "type": "vcs",
