@@ -4,7 +4,15 @@ Small PHP-SDK library for work with HTTP requests
 
 ### Installation
 
-`composer require ramapriya/http-request`
+Add dependency in composer.json
+
+```json
+"require": {
+    "ramapriya/http-request": "dev-master"
+}
+```
+
+Evoke autoload file after installation or updating composer
 
 ```php
 
